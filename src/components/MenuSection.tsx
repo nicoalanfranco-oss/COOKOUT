@@ -58,7 +58,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
           </div>
           <h2 className="section-title">THE COOKOUT MENU</h2>
           <p className="section-subtitle">
-            Inspired by live fire, the sea, and the urban beach kitchen. All prices are in USD — card and cash accepted at the event.
+            Inspired by live fire, the sea, and the urban beach kitchen. All prices in USD — official tournament wristband &amp; cards accepted at our counter.
           </p>
         </div>
 

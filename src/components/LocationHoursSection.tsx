@@ -63,9 +63,9 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ tena
                 <CreditCard size={22} />
               </div>
               <div>
-                <h4>Payment Methods</h4>
-                <p>Cash (USD / AWG) and Debit / Credit Cards</p>
-                <span className="loc-sub">Wireless terminals at our counter</span>
+                <h4>Official Tournament Payments</h4>
+                <p>BTA Event Wristband (RFID cashless) &amp; Cards</p>
+                <span className="loc-sub">Pay directly with your official tournament wristband, debit/credit cards or top-up at event stations</span>
               </div>
             </div>
 
