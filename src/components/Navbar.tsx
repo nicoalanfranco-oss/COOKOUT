@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             OFFICIAL POP-UP
           </span>
           <p className="event-text">
-            <strong>BEACH TENNIS ARUBA OPEN 2026</strong> • Bushiri Beach • November 8–22
+            <strong>OFFICIAL COOKOUT MENU • BEACH TENNIS ARUBA OPEN 2026</strong> • Bushiri Beach • November 8–22
           </p>
           <a
             href="https://www.instagram.com/cookoutaruba/"

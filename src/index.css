@@ -461,8 +461,9 @@ body {
 
 .cookout-logo-wrap {
   position: relative;
-  display: inline-block;
-  margin: 0 auto 1.75rem;
+  display: block;
+  margin: 0 auto 2rem;
+  width: 320px;
   border-radius: 20px;
   overflow: hidden;
   animation: cookoutLogoEntry 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards,
@@ -472,7 +473,7 @@ body {
 
 .cookout-logo-img {
   display: block;
-  width: 220px;
+  width: 100%;
   height: auto;
   border-radius: 18px;
 }

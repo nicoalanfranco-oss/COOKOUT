@@ -27,8 +27,8 @@ export const DishDetailModal: React.FC<DishDetailModalProps> = ({ plato, onClose
 
   const awgPrice = (plato.precio_venta * 1.79).toFixed(2);
 
-  // Preferred image: local if available, or Cloudinary
-  const displayImage = plato.imagen_local || plato.imagen_url || '/logo_cookout.jpg';
+  // Preferred image: Cloudinary first, then local fallback
+  const displayImage = plato.imagen_url || plato.imagen_local || '/logo_cookout.jpg';
 
   return (
     <div className="modal-backdrop" onClick={onClose}>

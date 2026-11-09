@@ -16,12 +16,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="hero-bg-overlay"></div>
       
       <div className="container hero-content">
-        {/* Tournament Pill */}
-        <div className="hero-badge-tournament">
-          <span className="badge-flame">🔥</span>
-          <span>OFFICIAL FOOD POP-UP • BEACH TENNIS ARUBA OPEN 2026</span>
-        </div>
-
         {/* Official Logo with animated entry + shine */}
         <div className="cookout-logo-wrap">
           <div className="cookout-logo-shine"></div>

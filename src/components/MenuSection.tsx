@@ -134,7 +134,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
           <div className="dishes-grid">
             {filteredPlatos.map((plato) => {
               const displayImage =
-                plato.imagen_local || plato.imagen_url || '/logo_cookout.jpg';
+                plato.imagen_url || plato.imagen_local || '/logo_cookout.jpg';
 
               return (
                 <article
