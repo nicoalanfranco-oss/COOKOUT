@@ -7,25 +7,25 @@ export const StoryCultureSection: React.FC = () => {
     {
       title: 'Pit-fire live cooking',
       subtitle: 'Live fire on the beach',
-      image: '/menu_photos/page_1_img_1_R14.jpg',
+      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794222333/nalu_food/elaborados/ua23pbkbzrd9fwsmmwqg.png',
       tag: '#SmashBurgers',
     },
     {
       title: 'Ocean Fresh Catch',
       subtitle: 'Local catch of the day',
-      image: '/menu_photos/page_6_img_3_R50.jpg',
+      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794177239/nalu_food/elaborados/eahrhuwxtu3u8vxove3d.png',
       tag: '#RawBar',
     },
     {
       title: 'Prime Ribeye Cuts',
       subtitle: 'Hand-selected prime cuts',
-      image: '/menu_photos/page_2_img_2_R29.jpg',
+      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794176197/nalu_food/elaborados/eriyp1k77cwzlosqu9wi.png',
       tag: '#FromtheGrill',
     },
     {
       title: 'Beach Vibes & BTA 2026',
       subtitle: 'The best atmosphere at the tournament',
-      image: '/menu_photos/page_5_img_2_R69.jpg',
+      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794179930/nalu_food/elaborados/cofrmrdqnmf18otb6ihh.png',
       tag: '#BeachTennisAruba',
     },
   ];
