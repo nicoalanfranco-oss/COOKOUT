@@ -24,7 +24,7 @@ export function useStructuredData(
             '@type': 'Restaurant',
             '@id': 'https://cookout.nico-family.com/#restaurant',
             name: 'COOKOUT Aruba',
-            image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794233933/nalu_food/covers/cookout_bta_2026_cover.jpg',
+            image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794234260/nalu_food/covers/cookout_bta_2026_cover.jpg',
             telephone: tenant.telefono,
             email: tenant.email,
             address: {
