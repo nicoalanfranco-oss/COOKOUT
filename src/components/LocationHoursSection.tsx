@@ -133,3 +133,4 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ tena
     </section>
   );
 };
+

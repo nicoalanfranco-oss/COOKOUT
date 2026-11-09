@@ -267,3 +267,4 @@ export async function fetchCookoutCatalogo(): Promise<{
     gruposOpciones: REAL_GRUPOS,
   };
 }
+

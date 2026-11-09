@@ -231,3 +231,4 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
     </section>
   );
 };
+

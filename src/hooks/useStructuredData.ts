@@ -87,3 +87,4 @@ export function useStructuredData(
     }
   }, [tenant, marca, platos]);
 }
+

@@ -16,3 +16,4 @@
 Antes de realizar cualquier commit o push:
 1. Ejecutar `git status` para comprobar los cambios.
 2. Asegurarse de que no existan archivos de prueba ni variables privadas.
+

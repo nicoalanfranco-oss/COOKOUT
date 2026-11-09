@@ -91,3 +91,4 @@ export interface ProductoElaborado {
   has_fries_addon?: boolean;
   badge?: string;
 }
+

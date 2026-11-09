@@ -57,3 +57,4 @@ export const TournamentBanner: React.FC = () => {
     </section>
   );
 };
+
