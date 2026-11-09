@@ -49,18 +49,28 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Top Event Announcement Bar */}
       <aside aria-label="Event announcement" className="event-top-bar">
         <div className="container event-top-bar-content">
-          <span className="event-tag">
-            <span className="pulse-dot"></span>
-            OFFICIAL POP-UP
-          </span>
-          <p className="event-text">
-            <strong>OFFICIAL COOKOUT MENU • BEACH TENNIS ARUBA OPEN 2026</strong> • Bushiri Beach • November 8–22
+          <p className="event-text desktop-only">
+            <strong>OFFICIAL COOKOUT MENU • BEACH TENNIS ARUBA OPEN 2026</strong> • Bushiri Beach • Nov 8–22
           </p>
+
+          <div className="event-mobile-row mobile-only">
+            <span className="event-mobile-info">Bushiri Beach · Nov 8–22</span>
+            <a
+              href="https://www.instagram.com/cookoutaruba/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="event-ig-link"
+            >
+              <InstagramIcon size={13} />
+              <span>@cookoutaruba</span>
+            </a>
+          </div>
+
           <a
             href="https://www.instagram.com/cookoutaruba/"
             target="_blank"
             rel="noopener noreferrer"
-            className="event-ig-link"
+            className="event-ig-link desktop-only"
           >
             <InstagramIcon size={14} />
             <span>@cookoutaruba</span>

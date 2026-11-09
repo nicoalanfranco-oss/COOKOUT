@@ -32,7 +32,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </p>
 
         {/* Event Quick Specs */}
-        <div className="hero-specs-grid">
+        <div className="hero-specs-grid desktop-only">
           <div className="hero-spec-card">
             <MapPin className="spec-icon" size={20} />
             <div>
@@ -59,7 +59,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Feature Badges — compact single row */}
-        <div className="hero-highlights">
+        <div className="hero-highlights desktop-only">
           <span className="highlight-pill">🔥 Pit-Fire &amp; Charcoal Grill</span>
           <span className="highlight-pill">🐟 Fresh Catch &amp; Raw Bar</span>
           <span className="highlight-pill">⚡ Fast Court-Side Pickup</span>
@@ -67,7 +67,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* CTAs */}
-        <div className="hero-cta-group">
+        <div className="hero-cta-group desktop-only">
           <button type="button" className="btn-hero-primary" onClick={onScrollToMenu}>
             <span>View Official Menu 2026</span>
             <ArrowDown size={18} />

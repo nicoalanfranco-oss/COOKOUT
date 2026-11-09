@@ -10,11 +10,11 @@ interface MenuSectionProps {
 }
 
 const CATEGORIES = [
-  { id: 'all', label: 'Full Menu', icon: '🍽️' },
-  { id: 'From the Grill', label: 'FROM THE GRILL', icon: '🔥' },
-  { id: 'From the Griddle', label: 'FROM THE GRIDDLE', icon: '🍳' },
-  { id: 'Crispy Classics', label: 'CRISPY CLASSICS', icon: '🍟' },
-  { id: 'From the Salad Bar', label: 'FROM THE SALAD BAR', icon: '🥗' },
+  { id: 'all', label: 'All', icon: '🍽️' },
+  { id: 'From the Grill', label: 'Grill', icon: '🔥' },
+  { id: 'From the Griddle', label: 'Griddle', icon: '🍳' },
+  { id: 'Crispy Classics', label: 'Crispy', icon: '🍟' },
+  { id: 'From the Salad Bar', label: 'Salad', icon: '🥗' },
 ];
 
 export const MenuSection: React.FC<MenuSectionProps> = ({
