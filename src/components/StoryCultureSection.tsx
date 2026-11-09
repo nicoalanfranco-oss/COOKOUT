@@ -1,30 +1,30 @@
 import React from 'react';
-import { Flame, ExternalLink, Fish, Sparkles, Heart } from 'lucide-react';
+import { Flame, ExternalLink, Fish } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 export const StoryCultureSection: React.FC = () => {
   const instagramPosts = [
     {
       title: 'Pit-fire live cooking',
-      subtitle: 'Fuego vivo en la playa',
+      subtitle: 'Live fire on the beach',
       image: '/menu_photos/page_1_img_1_R14.jpg',
       tag: '#SmashBurgers',
     },
     {
       title: 'Ocean Fresh Catch',
-      subtitle: 'Pesca local del día',
+      subtitle: 'Local catch of the day',
       image: '/menu_photos/page_6_img_3_R50.jpg',
       tag: '#RawBar',
     },
     {
       title: 'Prime Ribeye Cuts',
-      subtitle: 'Cortes seleccionados',
+      subtitle: 'Hand-selected prime cuts',
       image: '/menu_photos/page_2_img_2_R29.jpg',
       tag: '#FromtheGrill',
     },
     {
       title: 'Beach Vibes & BTA 2026',
-      subtitle: 'El mejor ambiente del torneo',
+      subtitle: 'The best atmosphere at the tournament',
       image: '/menu_photos/page_5_img_2_R69.jpg',
       tag: '#BeachTennisAruba',
     },
@@ -41,13 +41,13 @@ export const StoryCultureSection: React.FC = () => {
               <span>THE COOKOUT EXPERIENCE</span>
             </div>
             <h2 className="story-title">
-              FUEGO, MAR Y PASIÓN POR EL BEACH TENNIS
+              FIRE, SEA &amp; PASSION FOR BEACH TENNIS
             </h2>
             <p className="story-p">
-              Nacido de la mano del equipo gastronómico de <strong>Green Fish Aruba</strong>, <strong>COOKOUT</strong> redefine el concepto de comida de torneo. Combinamos la técnica rústica de parrilla a leña y carbón con la frescura inigualable de nuestra barra de mariscos y ceviches caribeños.
+              Born from the culinary team at <strong>Green Fish Aruba</strong>, <strong>COOKOUT</strong> redefines tournament food. We blend the rustic technique of pit-fire and charcoal grilling with the unmatched freshness of our raw bar and Caribbean ceviche.
             </p>
             <p className="story-p">
-              Durante el <strong>Beach Tennis Aruba Open 2026</strong>, te esperamos en Bushiri Beach desde las 10:00 de la mañana hasta la medianoche con platos preparados al instante para recargar energía entre partido y partido o celebrar con amigos al atardecer.
+              During the <strong>Beach Tennis Aruba Open 2026</strong>, we'll be at Bushiri Beach from 10:00 AM to midnight — with dishes cooked to order so you can refuel between matches or celebrate with friends at sunset.
             </p>
 
             <div className="story-author-box">
@@ -58,7 +58,7 @@ export const StoryCultureSection: React.FC = () => {
               />
               <div>
                 <strong>COOKOUT ARUBA</strong>
-                <span>Open-air Pit Fire & Raw Bar by Green Fish</span>
+                <span>Open-air Pit Fire &amp; Raw Bar by Green Fish</span>
               </div>
             </div>
           </div>
@@ -66,19 +66,19 @@ export const StoryCultureSection: React.FC = () => {
           <div className="story-highlight-card">
             <div className="story-card-inner">
               <Flame size={32} className="story-flame" />
-              <h3>¿QUÉ NOS HACE ÚNICOS?</h3>
+              <h3>WHAT MAKES US UNIQUE?</h3>
               <ul className="story-features-list">
                 <li>
-                  <strong>Carnes Seleccionadas:</strong> Ribeye tierno y smash burgers con blends de carne 100% de primera calidad.
+                  <strong>Hand-Selected Meats:</strong> Tender ribeye and smash burgers crafted from 100% premium-grade beef blends.
                 </li>
                 <li>
-                  <strong>Pesca y Ceviche Directo:</strong> Mahi-mahi y salmón fresco con el sello indiscutido de Green Fish Aruba.
+                  <strong>Direct Catch &amp; Ceviche:</strong> Mahi-mahi and fresh salmon with the unmistakable Green Fish Aruba seal of quality.
                 </li>
                 <li>
-                  <strong>Sabor Ahumado Auténtico:</strong> Asado a fuego vivo frente a vos en la orilla de Bushiri Beach.
+                  <strong>Authentic Smoky Flavor:</strong> Grilled over live fire right in front of you on the shores of Bushiri Beach.
                 </li>
                 <li>
-                  <strong>Atención a la Comunidad:</strong> Menú especial para el staff y la organización del torneo.
+                  <strong>Community First:</strong> Special menu for tournament staff and organization.
                 </li>
               </ul>
             </div>
@@ -89,8 +89,8 @@ export const StoryCultureSection: React.FC = () => {
         <div className="instagram-showcase-block">
           <div className="ig-header">
             <div>
-              <span className="ig-subtitle">SÍGUENOS EN REDES</span>
-              <h3 className="ig-title">VIVE LA EXPERIENCIA @COOKOUTARUBA</h3>
+              <span className="ig-subtitle">FOLLOW US ON SOCIAL</span>
+              <h3 className="ig-title">EXPERIENCE @COOKOUTARUBA</h3>
             </div>
             <a
               href="https://www.instagram.com/cookoutaruba/"
@@ -99,7 +99,7 @@ export const StoryCultureSection: React.FC = () => {
               className="btn-ig-pill"
             >
               <InstagramIcon size={18} />
-              <span>Seguir en Instagram</span>
+              <span>Follow on Instagram</span>
               <ExternalLink size={14} />
             </a>
           </div>
@@ -126,7 +126,7 @@ export const StoryCultureSection: React.FC = () => {
 
           <div className="ig-footer-callout">
             <p>
-              Etiquetanos en tus historias durante el torneo con <strong>#CookoutAruba</strong> y <strong>#BTA2026</strong> para salir en nuestro feed oficial!
+              Tag us in your stories during the tournament with <strong>#CookoutAruba</strong> and <strong>#BTA2026</strong> to be featured on our official feed!
             </p>
           </div>
         </div>

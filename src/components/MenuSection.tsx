@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Flame, Utensils, Search, Sparkles, Filter, ChevronRight, Info } from 'lucide-react';
+import { Flame, Utensils, Search, ChevronRight } from 'lucide-react';
 import { ProductoElaborado } from '../types/food';
 
 interface MenuSectionProps {
@@ -10,7 +10,7 @@ interface MenuSectionProps {
 }
 
 const CATEGORIES = [
-  { id: 'all', label: 'Toda la Carta', icon: '🍽️' },
+  { id: 'all', label: 'Full Menu', icon: '🍽️' },
   { id: 'From the Grill', label: 'FROM THE GRILL', icon: '🔥' },
   { id: 'From the Griddle', label: 'FROM THE GRIDDLE', icon: '🍳' },
   { id: 'Crispy Classics', label: 'CRISPY CLASSICS', icon: '🍟' },
@@ -54,19 +54,12 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
         <div className="section-header-block">
           <div className="section-pill">
             <Flame size={15} />
-            <span>MENÚ OFICIAL • BTA 2026</span>
+            <span>OFFICIAL MENU • BTA 2026</span>
           </div>
           <h2 className="section-title">THE COOKOUT MENU</h2>
           <p className="section-subtitle">
-            Inspirado en el fuego vivo, el mar y la cocina urbana de playa. Todos los precios están expresados en USD (dólares estadounidenses) y se acepta pago con tarjeta y efectivo en el evento.
+            Inspired by live fire, the sea, and the urban beach kitchen. All prices are in USD — card and cash accepted at the event.
           </p>
-
-          <div className="menu-info-banner">
-            <Info size={18} className="info-icon" />
-            <span>
-              <strong>Menú informativo:</strong> Por el momento no se procesan pedidos con carrito online. Podés acercarte directamente a nuestro mostrador en Bushiri Beach durante el torneo o consultarnos por WhatsApp.
-            </span>
-          </div>
         </div>
 
         {/* Search & Category Filter Controls */}
@@ -76,7 +69,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
             <Search className="search-icon" size={18} />
             <input
               type="text"
-              placeholder="Buscar por plato, carne, mariscos o ingredientes..."
+              placeholder="Search dishes, meats, seafood or ingredients..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="search-input"
@@ -124,8 +117,8 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
         {filteredPlatos.length === 0 ? (
           <div className="empty-results-box">
             <Utensils size={40} />
-            <h3>No encontramos platos que coincidan</h3>
-            <p>Probá buscando con otro término o seleccioná "Toda la Carta".</p>
+            <h3>No dishes found</h3>
+            <p>Try a different search term or select "Full Menu".</p>
             <button
               type="button"
               className="btn-reset-filters"
@@ -134,7 +127,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
                 onSelectCategory('all');
               }}
             >
-              Restablecer Filtros
+              Reset Filters
             </button>
           </div>
         ) : (
@@ -164,7 +157,6 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
                         }
                       }}
                     />
-                    <div className="dish-image-overlay"></div>
 
                     {/* Badge */}
                     {plato.badge && (
@@ -208,7 +200,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
                         ))}
                         {plato.insumos_receta.length > 3 && (
                           <span className="insumo-mini-chip more">
-                            +{plato.insumos_receta.length - 3} más
+                            +{plato.insumos_receta.length - 3} more
                           </span>
                         )}
                       </div>
@@ -217,7 +209,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
                     {/* Footer Button */}
                     <div className="dish-card-footer">
                       <span className="btn-view-details">
-                        <span>Ver Detalles & Foto</span>
+                        <span>View Details &amp; Photo</span>
                         <ChevronRight size={16} />
                       </span>
                     </div>

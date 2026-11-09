@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flame, Sparkles, MapPin, Clock, Award, ArrowDown, CheckCircle2 } from 'lucide-react';
+import { MapPin, ArrowDown } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 
 interface HeroSectionProps {
@@ -18,18 +18,23 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="container hero-content">
         {/* Tournament Pill */}
         <div className="hero-badge-tournament">
-          <span className="badge-flame"><Flame size={16} /></span>
+          <span className="badge-flame">🔥</span>
           <span>OFFICIAL FOOD POP-UP • BEACH TENNIS ARUBA OPEN 2026</span>
         </div>
 
-        {/* Big Brand Title */}
-        <h1 className="hero-title">
-          <span className="hero-title-main">COOKOUT</span>
-          <span className="hero-title-sub">ARUBA</span>
-        </h1>
+        {/* Official Logo with animated entry + shine */}
+        <div className="cookout-logo-wrap">
+          <div className="cookout-logo-shine"></div>
+          <img
+            src="/logo_cookout.jpg"
+            alt="COOKOUT Aruba"
+            className="cookout-logo-img"
+          />
+        </div>
 
         <p className="hero-tagline">
-          The ultimate pit-fire grill & raw bar experience at Bushiri Beach. Smash burgers, flame-grilled ribeyes, crispy classics and fresh ocean ceviche right by the championship courts.
+          The ultimate pit-fire grill &amp; raw bar experience at Bushiri Beach. Smash burgers,
+          flame-grilled ribeyes, crispy classics and fresh ocean ceviche right by the championship courts.
         </p>
 
         {/* Event Quick Specs */}
@@ -37,54 +42,46 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="hero-spec-card">
             <MapPin className="spec-icon" size={20} />
             <div>
-              <div className="spec-label">LUGAR</div>
+              <div className="spec-label">LOCATION</div>
               <div className="spec-value">Bushiri Beach, Aruba</div>
             </div>
           </div>
 
           <div className="hero-spec-card">
-            <Clock className="spec-icon" size={20} />
+            <span className="spec-icon" style={{ fontSize: '1.25rem' }}>⏰</span>
             <div>
-              <div className="spec-label">HORARIO</div>
-              <div className="spec-value">10:00 a 00:00 hs (Todos los días)</div>
+              <div className="spec-label">HOURS</div>
+              <div className="spec-value">10:00 AM – Midnight · Every Day</div>
             </div>
           </div>
 
           <div className="hero-spec-card">
-            <Award className="spec-icon" size={20} />
+            <span className="spec-icon" style={{ fontSize: '1.25rem' }}>🏆</span>
             <div>
-              <div className="spec-label">CREADO POR</div>
+              <div className="spec-label">BY</div>
               <div className="spec-value">Green Fish Aruba</div>
             </div>
           </div>
         </div>
 
-        {/* Feature Badges */}
+        {/* Feature Badges — compact single row */}
         <div className="hero-highlights">
-          <span className="highlight-pill">
-            <CheckCircle2 size={15} /> 100% Pit-Fire & Charcoal Grill
-          </span>
-          <span className="highlight-pill">
-            <CheckCircle2 size={15} /> Fresh Catch & Raw Bar
-          </span>
-          <span className="highlight-pill">
-            <CheckCircle2 size={15} /> Fast Court-Side Pickup
-          </span>
-          <span className="highlight-pill">
-            <CheckCircle2 size={15} /> Prices in USD & AWG
-          </span>
+          <span className="highlight-pill">🔥 Pit-Fire &amp; Charcoal Grill</span>
+          <span className="highlight-pill">🐟 Fresh Catch &amp; Raw Bar</span>
+          <span className="highlight-pill">⚡ Fast Court-Side Pickup</span>
+          <span className="highlight-pill">💵 Prices in USD &amp; AWG</span>
         </div>
 
         {/* CTAs */}
         <div className="hero-cta-group">
           <button type="button" className="btn-hero-primary" onClick={onScrollToMenu}>
-            <span>Ver Carta Oficial 2026</span>
+            <span>View Official Menu 2026</span>
             <ArrowDown size={18} />
           </button>
           
           <button type="button" className="btn-hero-secondary" onClick={onScrollToLocation}>
             <MapPin size={18} />
-            <span>Cómo Llegar en Bushiri Beach</span>
+            <span>How to Get to Bushiri Beach</span>
           </button>
 
           <a

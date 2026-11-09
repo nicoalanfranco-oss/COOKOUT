@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Flame, MessageCircle, MapPin, Menu as MenuIcon, X, Calendar } from 'lucide-react';
+import { MapPin, Menu as MenuIcon, X } from 'lucide-react';
 import { InstagramIcon } from './InstagramIcon';
 import { MarcaInfo } from '../types/food';
 
@@ -28,12 +28,12 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, []);
 
   const navLinks = [
-    { label: 'Menú Completo', id: 'menu' },
+    { label: 'Full Menu', id: 'menu' },
     { label: 'From The Grill', category: 'From the Grill', id: 'menu' },
     { label: 'Crispy Classics', category: 'Crispy Classics', id: 'menu' },
     { label: 'Salad Bar', category: 'From the Salad Bar', id: 'menu' },
     { label: 'Beach Tennis 2026', id: 'tournament' },
-    { label: 'Ubicación', id: 'location' },
+    { label: 'Location', id: 'location' },
   ];
 
   const handleLinkClick = (link: typeof navLinks[0]) => {
@@ -47,14 +47,14 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <>
       {/* Top Event Announcement Bar */}
-      <aside aria-label="Anuncio del evento" className="event-top-bar">
+      <aside aria-label="Event announcement" className="event-top-bar">
         <div className="container event-top-bar-content">
           <span className="event-tag">
             <span className="pulse-dot"></span>
-            OFICIAL POP-UP
+            OFFICIAL POP-UP
           </span>
           <p className="event-text">
-            <strong>BEACH TENNIS ARUBA OPEN 2026</strong> • Bushiri Beach • 8 al 22 de Noviembre
+            <strong>BEACH TENNIS ARUBA OPEN 2026</strong> • Bushiri Beach • November 8–22
           </p>
           <a
             href="https://www.instagram.com/cookoutaruba/"
@@ -71,15 +71,9 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Main Navigation */}
       <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-content">
-          {/* Brand Logo & Title */}
+          {/* Brand Logo */}
           <div className="navbar-brand" onClick={() => onScrollToSection('hero')} role="button" tabIndex={0}>
-            <div className="logo-badge">
-              <Flame className="flame-icon" size={24} />
-            </div>
-            <div className="brand-text">
-              <span className="brand-name">COOKOUT</span>
-              <span className="brand-sub">ARUBA • BY GREEN FISH</span>
-            </div>
+            <img src="/logo_cookout.jpg" alt="COOKOUT Aruba" className="navbar-logo-img" />
           </div>
 
           {/* Desktop Nav Items */}
@@ -103,18 +97,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="btn-icon-link"
-              title="Instagram Oficial"
+              title="Official Instagram"
             >
               <InstagramIcon size={19} />
-            </a>
-            <a
-              href="https://wa.me/2975930387?text=Hola%20Cookout%20Aruba!%20Quería%20hacer%20una%20consulta%20sobre%20el%20menú%20para%20el%20Beach%20Tennis%202026"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary-action"
-            >
-              <MessageCircle size={17} />
-              <span>WhatsApp</span>
             </a>
           </div>
 
@@ -146,22 +131,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div className="mobile-drawer-footer">
               <a
-                href="https://wa.me/2975930387?text=Hola%20Cookout%20Aruba!%20Quería%20hacer%20una%20consulta%20sobre%20el%20menú%20para%20el%20Beach%20Tennis%202026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary-action full-width"
-              >
-                <MessageCircle size={18} />
-                <span>Contactar por WhatsApp (+297 593 0387)</span>
-              </a>
-              <a
                 href="https://www.instagram.com/cookoutaruba/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary-action full-width"
               >
                 <InstagramIcon size={18} />
-                <span>Seguir en @cookoutaruba</span>
+                <span>Follow @cookoutaruba</span>
               </a>
             </div>
           </div>
