@@ -182,7 +182,7 @@ function normalizePlato(p: any): ProductoElaborado {
     marca_id: p.marca_id || 7,
     nombre: p.nombre,
     categoria: enrichment.categoria || p.categoria || 'From the Grill',
-    descripcion: enrichment.descripcion || p.descripcion || 'Especialidad oficial de Cookout para Beach Tennis Aruba Open 2026.',
+    descripcion: p.descripcion || enrichment.descripcion || 'Official Cookout dish — Beach Tennis Aruba Open 2026.',
     precio_venta: Number(p.precio_venta || 0),
     es_personalizable: Boolean(p.es_personalizable),
     formato_venta: 'unidad',
