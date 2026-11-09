@@ -77,9 +77,6 @@ export const StoryCultureSection: React.FC = () => {
                 <li>
                   <strong>Authentic Smoky Flavor:</strong> Grilled over live fire right in front of you on the shores of Bushiri Beach.
                 </li>
-                <li>
-                  <strong>Community First:</strong> Special menu for tournament staff and organization.
-                </li>
               </ul>
             </div>
           </div>

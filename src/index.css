@@ -666,6 +666,10 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.tournament-banner-card-single {
+  grid-template-columns: 1fr;
+}
+
 .tournament-pill {
   display: inline-flex;
   align-items: center;

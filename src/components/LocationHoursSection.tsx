@@ -101,10 +101,6 @@ export const LocationHoursSection: React.FC<LocationHoursSectionProps> = ({ tena
                 <span className="bullet">✓</span>
                 <span>Protein-rich &amp; healthy options at our Salad Bar</span>
               </div>
-              <div className="check-item">
-                <span className="bullet">✓</span>
-                <span>Special menu for referees, judges and tournament staff</span>
-              </div>
             </div>
 
             <div className="location-contact-footer">

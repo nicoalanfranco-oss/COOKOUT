@@ -1,11 +1,11 @@
 import React from 'react';
-import { Calendar, Users, Trophy, Sparkles, HeartHandshake } from 'lucide-react';
+import { Calendar, Users, Trophy } from 'lucide-react';
 
 export const TournamentBanner: React.FC = () => {
   return (
     <section id="tournament" className="tournament-banner-section">
       <div className="container">
-        <div className="tournament-banner-card">
+        <div className="tournament-banner-card tournament-banner-card-single">
           <div className="tournament-banner-info">
             <div className="tournament-pill">
               <Trophy size={16} />
@@ -29,27 +29,10 @@ export const TournamentBanner: React.FC = () => {
               <div className="tournament-date-box">
                 <Users size={18} />
                 <div>
-                  <strong>+1,500 PLAYERS</strong>
+                  <strong>+1,900 PLAYERS</strong>
                   <span>From Over 40 Countries</span>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Special Staff / Family Callout matching PDF */}
-          <div className="tournament-staff-box">
-            <div className="staff-box-header">
-              <HeartHandshake size={22} className="staff-icon" />
-              <div>
-                <h3 className="staff-box-title">STAFF? WE GOT YOU!</h3>
-                <p className="staff-box-sub">ASK FOR THE FAMILY MENU</p>
-              </div>
-            </div>
-            <p className="staff-box-text">
-              Part of the tournament organization, chair umpires, line judges, medical team, or event crew? Stop by the Cookout counter and ask for the exclusive Beach Tennis Aruba 2026 family menu.
-            </p>
-            <div className="staff-box-badge">
-              <span>★ BTA 2026 OFFICIAL CREW PERK</span>
             </div>
           </div>
         </div>

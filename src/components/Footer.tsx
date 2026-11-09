@@ -74,11 +74,6 @@ export const Footer: React.FC = () => {
                   ⏰ 10:00 AM – Midnight · Every Day
                 </span>
               </li>
-              <li>
-                <span className="footer-info-line">
-                  ⭐ Staff? Ask for the Family Menu
-                </span>
-              </li>
             </ul>
           </div>
 
