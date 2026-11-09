@@ -15,7 +15,7 @@ export const TournamentBanner: React.FC = () => {
               ARUBA OPEN BEACH TENNIS 2026
             </h2>
             <p className="tournament-desc">
-              Del 8 al 22 de Noviembre de 2026, Bushiri Beach se convierte en la capital mundial del beach tennis. COOKOUT es el punto de encuentro gastronómico oficial a metros de la arena: fuego vivo, hamburguesas smash, bife de ribeye, pesca local y ambiente de fiesta continuo.
+              From November 8 to 22, 2026, Bushiri Beach becomes the world capital of beach tennis. COOKOUT is the official tournament culinary hub steps from the sand: live pit-fire grilling, smash burgers, ribeye steaks, fresh ocean catch, and non-stop festival vibes.
             </p>
 
             <div className="tournament-dates-grid">
@@ -23,14 +23,14 @@ export const TournamentBanner: React.FC = () => {
                 <Calendar size={18} />
                 <div>
                   <strong>08 – 22 NOV 2026</strong>
-                  <span>15 días ininterrumpidos</span>
+                  <span>15 Non-Stop Days</span>
                 </div>
               </div>
               <div className="tournament-date-box">
                 <Users size={18} />
                 <div>
-                  <strong>+1,500 JUGADORES</strong>
-                  <span>De más de 40 países</span>
+                  <strong>+1,500 PLAYERS</strong>
+                  <span>From Over 40 Countries</span>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export const TournamentBanner: React.FC = () => {
               </div>
             </div>
             <p className="staff-box-text">
-              Sos parte de la organización, jueces de silla, árbitros, cuerpo médico o staff del torneo? Acercate al mostrador de Cookout y consultá por el menú exclusivo para la familia de Beach Tennis Aruba 2026.
+              Part of the tournament organization, chair umpires, line judges, medical team, or event crew? Stop by the Cookout counter and ask for the exclusive Beach Tennis Aruba 2026 family menu.
             </p>
             <div className="staff-box-badge">
               <span>★ BTA 2026 OFFICIAL CREW PERK</span>
