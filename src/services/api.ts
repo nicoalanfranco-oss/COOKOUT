@@ -239,19 +239,47 @@ export const FOOD_BACKEND_URL = (() => {
   return 'https://food--studio-4748759464-52942.us-east4.hosted.app';
 })();
 
-export async function fetchCookoutCatalogo(): Promise<{
+const LOCAL_STORAGE_CATALOG_KEY = 'cookout_cached_catalog_v2';
+
+export function getInitialCatalog() {
+  try {
+    const saved = localStorage.getItem(LOCAL_STORAGE_CATALOG_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.elaborados && parsed.elaborados.length > 0) {
+        return parsed;
+      }
+    }
+  } catch {}
+  return {
+    elaborados: REAL_PLATOS,
+    tenant: TENANT_INFO,
+    marca: MARCA_INFO,
+    gruposOpciones: REAL_GRUPOS,
+  };
+}
+
+export async function fetchCookoutCatalogo(forceRefresh = false): Promise<{
   elaborados: ProductoElaborado[];
   tenant: TenantInfo;
   marca: MarcaInfo;
   gruposOpciones: GrupoOpciones[];
 }> {
   try {
-    const url = `${FOOD_BACKEND_URL}/api/public/catalogo?tenant_id=8&marca_id=7`;
-    const res = await fetch(url, { headers: { Accept: 'application/json' } });
+    const timestamp = Date.now();
+    const url = `${FOOD_BACKEND_URL}/api/public/catalogo?tenant_id=8&marca_id=7&_t=${timestamp}`;
+    const res = await fetch(url, {
+      cache: 'no-store',
+      headers: {
+        'Accept': 'application/json',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+      },
+    });
     if (res.ok) {
       const data = await res.json();
       const platosBackend = (data.elaborados || []).map(normalizePlato);
-      return {
+      const finalCatalog = {
         elaborados: platosBackend.length > 0 ? platosBackend : REAL_PLATOS,
         tenant: {
           ...TENANT_INFO,
@@ -263,10 +291,26 @@ export async function fetchCookoutCatalogo(): Promise<{
         },
         gruposOpciones: data.gruposOpciones || REAL_GRUPOS,
       };
+
+      try {
+        localStorage.setItem(LOCAL_STORAGE_CATALOG_KEY, JSON.stringify(finalCatalog));
+      } catch {}
+
+      return finalCatalog;
     }
   } catch (err) {
     console.warn('Conectando con catálogo estático offline:', err);
   }
+
+  try {
+    const saved = localStorage.getItem(LOCAL_STORAGE_CATALOG_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (parsed && parsed.elaborados && parsed.elaborados.length > 0) {
+        return parsed;
+      }
+    }
+  } catch {}
 
   return {
     elaborados: REAL_PLATOS,
