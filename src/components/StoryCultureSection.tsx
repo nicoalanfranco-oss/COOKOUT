@@ -7,25 +7,25 @@ export const StoryCultureSection: React.FC = () => {
     {
       title: 'Pit-fire live cooking',
       subtitle: 'Live fire on the beach',
-      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794222333/nalu_food/elaborados/ua23pbkbzrd9fwsmmwqg.png',
+      image: 'https://res.cloudinary.com/kqq248pz/image/upload/v1795545481/Productos/cfu5iipndjnzqvapgpbl.png',
       tag: '#SmashBurgers',
     },
     {
       title: 'Ocean Fresh Catch',
       subtitle: 'Local catch of the day',
-      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794177239/nalu_food/elaborados/eahrhuwxtu3u8vxove3d.png',
+      image: 'https://res.cloudinary.com/kqq248pz/image/upload/v1795545478/Productos/dlqmcs9ni4gnh4cxdtqx.png',
       tag: '#RawBar',
     },
     {
       title: 'Prime Ribeye Cuts',
       subtitle: 'Hand-selected prime cuts',
-      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794176197/nalu_food/elaborados/eriyp1k77cwzlosqu9wi.png',
+      image: 'https://res.cloudinary.com/kqq248pz/image/upload/v1795545467/Productos/irvwtn4wusimka9qzlnc.png',
       tag: '#FromtheGrill',
     },
     {
       title: 'Beach Vibes & BTA 2026',
       subtitle: 'The best atmosphere at the tournament',
-      image: 'https://res.cloudinary.com/domyogu15/image/upload/v1794179930/nalu_food/elaborados/cofrmrdqnmf18otb6ihh.png',
+      image: 'https://res.cloudinary.com/kqq248pz/image/upload/v1795545487/Productos/gs7beks05bmpofwciare.png',
       tag: '#BeachTennisAruba',
     },
   ];
