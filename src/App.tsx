@@ -65,7 +65,7 @@ export const App: React.FC = () => {
 
         if (shouldHardReload) {
           console.warn(`[Inactivity] Sesión abierta hace ${minutesIdle} minutos. Refrescando versión y datos limpios...`);
-          checkAppVersionAndPurge().then(purged => {
+          checkAppVersionAndPurge(true).then(purged => {
             if (!purged) {
               syncCatalog(true);
             }
@@ -74,6 +74,8 @@ export const App: React.FC = () => {
         }
 
         if (isStale) {
+          checkAppVersionAndPurge(true).catch(() => {});
+        } else {
           checkAppVersionAndPurge().catch(() => {});
         }
 
@@ -88,7 +90,7 @@ export const App: React.FC = () => {
     };
 
     const handleOnline = () => {
-      checkAppVersionAndPurge().catch(() => {});
+      checkAppVersionAndPurge(true).catch(() => {});
       syncCatalog(true);
     };
 
